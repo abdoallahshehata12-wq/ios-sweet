@@ -38,8 +38,8 @@ jobs:
   build:
     # macOS 14 runners retired in November 2026. The Xcode 16 IORPC field
     # emitted by iig is backported in 0086-xcode16-iig-compat.patch.
-    runs-on: macos-15
-    timeout-minutes: 120
+    runs-on: macos-15-intel
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
 
